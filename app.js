@@ -84,12 +84,12 @@ const WOMEN_FEATURES = ["やわらかロウリュ（アロマ使用）", "ゆっ
 const AMENITIES = ["Dysonドライヤー", "オーガニック化粧品", "ヘアアイロン", "基礎化粧品セット", "シャンプー・コンディショナー", "ボディソープ", "化粧水・乳液", "メイク落とし"];
 
 const FACILITY_SPECS = [
-    { title: "サウナ室（男性）", specs: [["温度", "88℃"], ["定員", "12名"], ["タイプ", "フィンランド式"], ["ストーン", "サウナストーン200kg使用"], ["ロウリュ", "毎時00分実施"], ["照明", "間接照明（調光可能）"]] },
-    { title: "女性専用サウナ", specs: [["温度", "85℃"], ["定員", "8名"], ["タイプ", "やわらかロウリュ"], ["アロマ", "日替わりアロマオイル"], ["特徴", "北欧デザイン、柔らかい木材使用"]] },
-    { title: "水風呂（17℃シングル）", specs: [["温度", "17℃（±0.5℃）"], ["定員", "4名"], ["水質", "オゾン水循環濾過"], ["深さ", "90cm"]] },
-    { title: "水風呂（12℃バイブラ）", specs: [["温度", "12℃（±0.5℃）"], ["定員", "3名"], ["タイプ", "バイブラジェット"], ["水質", "軟水使用"]] },
-    { title: "外気浴スペース", specs: [["場所", "屋上（5階）"], ["席数", "10席（北欧チェア）"], ["特徴", "都心の夜景を一望"], ["植栽", "観葉植物配置"]] },
-    { title: "パウダールーム", specs: [["設備", "Dysonドライヤー、ヘアアイロン"], ["アメニティ", "オーガニック化粧品完備"], ["席数", "12席（女性専用8席）"]] }
+    { title: "サウナ室（男性）", img: "Images0210/ChatGPT Image Nov 18, 2025, 08_47_53 AM.png", specs: [["温度", "88℃"], ["定員", "12名"], ["タイプ", "フィンランド式"], ["ストーン", "サウナストーン200kg使用"], ["ロウリュ", "毎時00分実施"], ["照明", "間接照明（調光可能）"]] },
+    { title: "女性専用サウナ", img: "Images0210/ChatGPT Image Nov 18, 2025, 08_47_53 AM.png", specs: [["温度", "85℃"], ["定員", "8名"], ["タイプ", "やわらかロウリュ"], ["アロマ", "日替わりアロマオイル"], ["特徴", "北欧デザイン、柔らかい木材使用"]] },
+    { title: "水風呂（17℃シングル）", img: "Images0210/ChatGPT Image Feb 10, 2026, 08_29_39 AM.png", specs: [["温度", "17℃（±0.5℃）"], ["定員", "4名"], ["水質", "オゾン水循環濾過"], ["深さ", "90cm"]] },
+    { title: "水風呂（12℃バイブラ）", img: "Images0210/ChatGPT Image Feb 10, 2026, 08_29_39 AM.png", specs: [["温度", "12℃（±0.5℃）"], ["定員", "3名"], ["タイプ", "バイブラジェット"], ["水質", "軟水使用"]] },
+    { title: "外気浴スペース", img: "Images0210/ChatGPT Image Nov 18, 2025, 08_47_41 AM.png", specs: [["場所", "屋上（5階）"], ["席数", "10席（北欧チェア）"], ["特徴", "都心の夜景を一望"], ["植栽", "観葉植物配置"]] },
+    { title: "パウダールーム", img: "Images0210/ChatGPT Image Nov 18, 2025, 08_47_24 AM.png", specs: [["設備", "Dysonドライヤー、ヘアアイロン"], ["アメニティ", "オーガニック化粧品完備"], ["席数", "12席（女性専用8席）"]] }
 ];
 
 const PRICE_TABLE = [
@@ -140,10 +140,10 @@ const App = () => {
                 </div>
 
                 {/* 10周年バッジ */}
-                <div className="absolute top-6 right-6 z-20 w-20 h-20 bg-[#C9A861] rounded-full flex flex-col items-center justify-center text-white shadow-lg border border-white/20">
-                    <span className="text-[11px] leading-none">10th</span>
-                    <span className="text-lg font-bold leading-tight">¥1,600</span>
-                    <span className="text-[10px] leading-none">～</span>
+                <div className="absolute top-20 left-4 md:top-32 md:left-12 z-20 w-24 h-24 md:w-32 md:h-32 bg-[#C9A861] rounded-full flex flex-col items-center justify-center text-white shadow-2xl border-2 border-white/30 animate-bounce-slow">
+                    <span className="text-[12px] md:text-sm leading-none opacity-80 mb-1">10th Anniv.</span>
+                    <span className="text-xl md:text-3xl font-bold leading-tight">¥1,600</span>
+                    <span className="text-[11px] md:text-xs leading-none mt-1">SPECIAL PRICE</span>
                 </div>
 
                 {/* メインコピー */}
@@ -299,9 +299,10 @@ const App = () => {
                 <div className="max-w-[1200px] mx-auto">
                     <SectionTitle sub="FOR WOMEN" title="女性専用エリア＆充実のアメニティ" />
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
-                        <div className="bg-white rounded-xl p-8 shadow-[0_4px_12px_rgba(0,0,0,0.04)]">
-                            <div className="w-full h-48 bg-gradient-to-r from-[#F5F0E8] to-[#D9C7B3] rounded-lg mb-6 flex items-center justify-center">
-                                <span className="text-[#6B6B6B] text-lg">Women's Sauna Area</span>
+                        <div className="bg-white rounded-xl p-8 shadow-[0_4px_12px_rgba(0,0,0,0.04)] overflow-hidden">
+                            <div className="w-full h-48 bg-cover bg-center rounded-lg mb-6 flex items-center justify-center relative group" style={{ backgroundImage: `url('Images0210/ChatGPT Image Nov 18, 2025, 08_47_24 AM.png')` }}>
+                                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+                                <span className="relative z-10 text-white font-bold text-xl tracking-widest drop-shadow-lg">Women's Sauna Area</span>
                             </div>
                             <h3 className="text-xl font-semibold mb-4">女性専用サウナ＆パウダールーム</h3>
                             <ul className="space-y-3">
@@ -394,8 +395,8 @@ const App = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
                         {FACILITY_SPECS.map((f, i) => (
                             <div key={i} className="bg-white rounded-xl overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.04)]">
-                                <div className="h-48 bg-gradient-to-r from-[#2A2A2A] to-[#444] flex items-center justify-center">
-                                    <span className="text-white/60 text-lg tracking-wider">{f.title}</span>
+                                <div className="h-56 bg-cover bg-center flex items-center justify-center relative" style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('${f.img}')` }}>
+                                    <span className="text-white text-2xl font-serif font-light tracking-widest drop-shadow-md">{f.title}</span>
                                 </div>
                                 <div className="p-6">
                                     <h3 className="text-xl font-semibold mb-4">{f.title}</h3>
