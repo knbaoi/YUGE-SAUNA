@@ -148,8 +148,10 @@ const App = () => {
 
                 {/* メインコピー */}
                 <div className="relative z-10 text-center px-6 max-w-[800px]">
-                    <h1 className="font-serif text-[40px] md:text-[60px] font-light text-white leading-[1.3] tracking-[0.05em] mb-4" style={{ textShadow: '0 3px 12px rgba(0,0,0,0.8)' }}>
-                        残業後、90分で<br />明日の自分を取り戻す
+                    <h1 className="font-serif text-white mb-4" style={{ textShadow: '0 3px 12px rgba(0,0,0,0.8)' }}>
+                        <span className="block text-[26px] md:text-[38px] font-light tracking-[0.08em] leading-[1.6] opacity-90">残業後、</span>
+                        <span className="block text-[36px] md:text-[52px] font-medium tracking-[0.04em] leading-[1.2]">90分で</span>
+                        <span className="block text-[34px] md:text-[50px] font-medium tracking-[0.04em] leading-[1.3] mt-1">明日の自分を取り戻す</span>
                     </h1>
                     <p className="text-white/70 text-sm md:text-base mb-2">都会の余白で、わたしだけの時間</p>
                     <p className="text-lg text-white opacity-95 tracking-[0.05em] mt-6 mb-6">
